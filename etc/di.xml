@@ -1,0 +1,17 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    
+    <virtualType name="Magestar\HomePageGallery\Model\ResourceModel\Gallery\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">magestar_homepagegallery</argument>
+            <argument name="resourceModel" xsi:type="string">Magestar\HomePageGallery\Model\ResourceModel\Gallery</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="magestar_homepagegallery_gallery_listing_data_source" xsi:type="string">Magestar\HomePageGallery\Model\ResourceModel\Gallery\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    
+</config>
