@@ -53,7 +53,7 @@ class Save extends \Magento\Backend\App\Action
     {
         $data = $this->getRequest()->getPostValue();
         if (!$data) {
-            $this->_redirect('Magestar_homepagegallery/gallery/addimage');
+            $this->_redirect('magestar_homepagegallery/gallery/addimage');
             return;
         }
         try {
@@ -66,7 +66,7 @@ class Save extends \Magento\Backend\App\Action
                  * Save slide_image_desktop upload
                  */
                 try {
-                    $base_media_path = 'Magestar/gallery';
+                    $base_media_path = 'magestar/gallery';
                     $uploader = $this->uploader->create(['fileId' => 'image_desktop']);
                     $uploader->setAllowedExtensions(['jpg', 'jpeg', 'gif', 'png']);
                     $imageAdapter = $this->adapterFactory->create();
@@ -100,7 +100,7 @@ class Save extends \Magento\Backend\App\Action
                  * Save image upload
                  */
                 try {
-                    $base_media_path = 'Magestar/gallery';
+                    $base_media_path = 'magestar/gallery';
                     $uploader = $this->uploader->create(['fileId' => 'image_tablet']);
                     $uploader->setAllowedExtensions(['jpg', 'jpeg', 'gif', 'png']);
                     $imageAdapter = $this->adapterFactory->create();
@@ -134,7 +134,7 @@ class Save extends \Magento\Backend\App\Action
                  * Save image upload
                  */
                 try {
-                    $base_media_path = 'Magestar/gallery';
+                    $base_media_path = 'magestar/gallery';
                     $uploader = $this->uploader->create(['fileId' => 'image_mobile']);
                     $uploader->setAllowedExtensions(['jpg', 'jpeg', 'gif', 'png']);
                     $imageAdapter = $this->adapterFactory->create();
@@ -173,7 +173,7 @@ class Save extends \Magento\Backend\App\Action
         } catch (\Exception $e) {
             $this->messageManager->addError(__($e->getMessage()));
         }
-        $this->_redirect('Magestar_homepagegallery/gallery/index');
+        $this->_redirect('magestar_homepagegallery/gallery/index');
     }
 
     /**

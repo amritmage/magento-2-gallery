@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="admin">
-        <route id="Magestar_homepagegallery" frontName="Magestar_homepagegallery">
+        <route id="magestar_homepagegallery" frontName="magestar_homepagegallery">
             <module name="Magestar_HomePageGallery"/>
         </route>
     </router>

@@ -3,10 +3,6 @@ $row1Images = $block->getGalleryImages(1);
 $row2Images = $block->getGalleryImages(2);
 $row1Count = $row1Images->getSize();
 $row2Count = $row2Images->getSize();
-
-$helper = $this->helper('Lof\LazyLoad\Helper\Data');
-$loadingIcon = $helper->getConfig('general/loadingIcon');
-$imgSrc = $helper->getMediaUrl().'lof'.DIRECTORY_SEPARATOR.'lazyload'.DIRECTORY_SEPARATOR.$loadingIcon;
 ?>
 <?php if($row1Count || $row2Count): ?>
 <div class="grid-container">
@@ -17,10 +13,9 @@ $imgSrc = $helper->getMediaUrl().'lof'.DIRECTORY_SEPARATOR.'lazyload'.DIRECTORY_
                     <a href="<?php echo $image->getLink()?>">
                         <div class="ban <?php echo $image->getEffect()?>">
                             <img class="lof-lazy image"
-                                 src="<?php echo $imgSrc ?>"
                                  title="<?php echo $image->getTitle()?>"
                                  alt="<?php echo $image->getTitle()?>"
-                                 data-src="<?php echo $block->getMediaUrl($image->getImageDesktop())?>"
+                                 src="<?php echo $block->getMediaUrl($image->getImageDesktop())?>"
                             />
                         </div>
                     </a>
@@ -35,10 +30,9 @@ $imgSrc = $helper->getMediaUrl().'lof'.DIRECTORY_SEPARATOR.'lazyload'.DIRECTORY_
                     <a href="<?php echo $image->getLink()?>">
                         <div class="ban <?php echo $image->getEffect()?>">
                             <img class="lof-lazy image"
-                                 src="<?php echo $imgSrc ?>"
                                  title="<?php echo $image->getTitle()?>"
                                  alt="<?php echo $image->getTitle()?>"
-                                 data-src="<?php echo $block->getMediaUrl($image->getImageDesktop())?>"
+                                 src="<?php echo $block->getMediaUrl($image->getImageDesktop())?>"
                             />
                         </div>
                     </a>
@@ -46,6 +40,5 @@ $imgSrc = $helper->getMediaUrl().'lof'.DIRECTORY_SEPARATOR.'lazyload'.DIRECTORY_
             <?php endforeach;?>
         </div>
     <?php endif;?>
-
 </div>
 <?php endif;?>

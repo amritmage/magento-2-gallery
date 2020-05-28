@@ -5,7 +5,7 @@
              title="Home Page Gallery"
              module="Magestar_HomePageGallery"
              sortOrder="1"
-             action="Magestar_homepagegallery/gallery/index"
+             action="magestar_homepagegallery/gallery/index"
              parent="Magestar_Banner::banner"
              resource="Magestar_HomePageGallery::gallery_images"
         />

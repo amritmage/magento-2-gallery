@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="Magestarmarket" translate="label" sortOrder="10">
-            <label>MagestarMarket</label>
+        <tab id="Magestar" translate="label" sortOrder="15">
+            <label>Magestar</label>
         </tab>
-        <section id="homepagegallery" translate="label" sortOrder="635" showInDefault="1" showInWebsite="1" showInStore="1">
-            <class>separator-top</class>
+        <section id="homepagegallery" translate="label" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>Homepage Gallery</label>
-            <tab>Magestarmarket</tab>
+            <tab>Magestar</tab>
             <resource>Magestar_HomePageGallery::config</resource>
             <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General Configuration</label>
