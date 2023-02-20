@@ -1,3 +1,3 @@
-# Magento 2 Homepage Gallery
+# Magento 2 Gallery
 
-This module adds a Gallery on the Homepage.
+This module adds a Gallery on the Homepage or any CMS Page.
