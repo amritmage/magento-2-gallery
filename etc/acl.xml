@@ -5,7 +5,7 @@
         <resources>
             <resource id="Magento_Backend::admin">
                 <resource id="Magento_Backend::content">
-                    <resource id="Magestar_Banner::banner" title="MagestarMarket" translate="title" sortOrder="1">
+                    <resource id="Magestar_HomePageGallery::gallery" title="Magestar" translate="title" sortOrder="1">
                         <resource id="Magestar_HomePageGallery::gallery_images"
                                   title="HomePage Gallery Lists" translate="title" sortOrder="1"/>
                     </resource>

@@ -7,38 +7,41 @@ $row2Count = $row2Images->getSize();
 <?php if($row1Count || $row2Count): ?>
 <div class="grid-container">
     <?php if($row1Count): ?>
-        <div class="grid12-12 row1">
-            <?php foreach($row1Images as $image): ?>
-                <div class="tile-image <?php echo $image->getClass()?>">
-                    <a href="<?php echo $image->getLink()?>">
-                        <div class="ban <?php echo $image->getEffect()?>">
-                            <img class="lof-lazy image"
-                                 title="<?php echo $image->getTitle()?>"
-                                 alt="<?php echo $image->getTitle()?>"
-                                 src="<?php echo $block->getMediaUrl($image->getImageDesktop())?>"
-                            />
-                        </div>
-                    </a>
-                </div>
-            <?php endforeach;?>
+        <div class="row">
+            <div class="grid12-12 row1">
+                <?php foreach($row1Images as $image): ?>
+                    <div class="tile-image <?php echo $image->getClass()?>">
+                        <a href="<?php echo $image->getLink()?>">
+                            <div class="ban <?php echo $image->getEffect()?>">
+                                <img class="lof-lazy image"
+                                     title="<?php echo $image->getTitle()?>"
+                                     alt="<?php echo $image->getTitle()?>"
+                                     src="<?php echo $block->getMediaUrl($image->getImageDesktop())?>"
+                                />
+                            </div>
+                        </a>
+                    </div>
+                <?php endforeach;?>
+            </div>
         </div>
     <?php endif;?>
     <?php if($row2Count): ?>
-        <div class="grid12-12 row2">
-            <?php foreach($row2Images as $image): ?>
-                <div class="tile-image <?php echo $image->getClass()?>">
-                    <a href="<?php echo $image->getLink()?>">
-                        <div class="ban <?php echo $image->getEffect()?>">
-                            <img class="lof-lazy image"
-                                 title="<?php echo $image->getTitle()?>"
-                                 alt="<?php echo $image->getTitle()?>"
-                                 src="<?php echo $block->getMediaUrl($image->getImageDesktop())?>"
-                            />
-                        </div>
-                    </a>
-                </div>
-            <?php endforeach;?>
-        </div>
+        <div class="row">
+            <div class="grid12-12 row2">
+                <?php foreach($row2Images as $image): ?>
+                    <div class="tile-image <?php echo $image->getClass()?>">
+                        <a href="<?php echo $image->getLink()?>">
+                            <div class="ban <?php echo $image->getEffect()?>">
+                                <img class="lof-lazy image"
+                                     title="<?php echo $image->getTitle()?>"
+                                     alt="<?php echo $image->getTitle()?>"
+                                     src="<?php echo $block->getMediaUrl($image->getImageDesktop())?>"
+                                />
+                            </div>
+                        </a>
+                    </div>
+                <?php endforeach;?>
+            </div>
     <?php endif;?>
 </div>
 <?php endif;?>

@@ -1,12 +1,19 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
+        <add id="Magestar_HomePageGallery::gallery"
+             title="Magestar"
+             module="Magestar_HomePageGallery"
+             sortOrder="20"
+             parent="Magento_Backend::content"
+             resource="Magestar_HomePageGallery::gallery"
+        />
     	<add id="Magestar_HomePageGallery::gallery_images"
              title="Home Page Gallery"
              module="Magestar_HomePageGallery"
              sortOrder="1"
              action="magestar_homepagegallery/gallery/index"
-             parent="Magestar_Banner::banner"
+             parent="Magento_Backend::content"
              resource="Magestar_HomePageGallery::gallery_images"
         />
     </menu>

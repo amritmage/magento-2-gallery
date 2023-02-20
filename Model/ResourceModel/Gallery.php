@@ -37,6 +37,6 @@ class Gallery extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
      */
     protected function _construct()
     {
-        $this->_init('Magestar_homepagegallery', 'image_id');
+        $this->_init('magestar_homepagegallery', 'image_id');
     }
 }
